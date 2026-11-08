@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Navigation from "./components/navigation/page";
 import StyledComponentsRegistry from "./registry";
 
 export const metadata: Metadata = {
@@ -10,14 +9,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html
-      lang="en"
-    >
+    <html lang="en">
       <body>
-        <StyledComponentsRegistry>
-          <Navigation/>
-          <main>{children}</main>
-        </StyledComponentsRegistry>
+        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
       </body>
     </html>
   );
