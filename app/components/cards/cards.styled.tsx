@@ -197,3 +197,46 @@ export const Stats = styled.ul`
     color: #4ade80;
   }
 `;
+
+export const Countdown = styled.div`
+    display: flex;
+    gap: 8px;
+    min-height: 52px;
+    margin-top: 12px;
+`
+
+export const CountdownUnit = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 52px;
+    padding: 6px 8px;
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 8px;
+
+    strong {
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 1.1;
+        font-variant-numeric: tabular-nums;
+    }
+
+    span {
+        font-size: 10px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        opacity: 0.8;
+    }
+`
+
+export const CountdownEnded = styled.span`
+    align-self: center;
+    padding: 6px 12px;
+    font-size: 13px;
+    font-weight: 600;
+    background: rgba(0, 0, 0, 0.45);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 8px;
+`

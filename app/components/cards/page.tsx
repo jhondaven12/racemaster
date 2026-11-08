@@ -9,6 +9,7 @@ import {
 } from "react-icons/md";
 import { FaMountainSun } from "react-icons/fa6";
 import { format } from "date-fns";
+import Countdown from "./countdown";
 
 export default function TrailCards() {
   return (
@@ -56,6 +57,8 @@ export default function TrailCards() {
                   {item.elevationGain}
                 </li>
               </Styled.Stats>
+
+              <Countdown date={item.date} />
             </Styled.ImageInfo>
           </Styled.CardContent>
         ))}

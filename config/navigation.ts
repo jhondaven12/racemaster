@@ -5,7 +5,7 @@ export const navigation = [
   },
   {
     label: "Races",
-    href: "/races",
+    href: "/#trails",
   },
   {
     label: "Gallery",

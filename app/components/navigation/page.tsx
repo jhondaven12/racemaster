@@ -34,6 +34,15 @@ export default function Navigation() {
                         <Styled.StyledLink
                             href={nav.href}
                             $isScrolled={isScrolled}
+                            onClick={(e) => {
+                                const hash = nav.href.split("#")[1];
+                                if (!hash || window.location.pathname !== "/") return;
+                                const el = document.getElementById(hash);
+                                if (!el) return;
+                                e.preventDefault();
+                                el.scrollIntoView({ behavior: "smooth" });
+                                window.history.replaceState(null, "", nav.href);
+                            }}
                         >
                             {nav.label}
                         </Styled.StyledLink>
