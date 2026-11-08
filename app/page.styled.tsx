@@ -50,13 +50,13 @@ export const Eyebrow = styled.span`
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: green;
+  color: var(--green);
 
   &::before {
     content: "";
     width: 40px;
     height: 2px;
-    background: green;
+    background: var(--green);
   }
 `;
 
@@ -68,7 +68,7 @@ export const WelcomeTitle = styled.h2`
 
   em {
     font-style: normal;
-    color: green;
+    color: var(--green);
   }
 
   @media (max-width: 640px) {
@@ -99,7 +99,7 @@ export const Highlights = styled.ul`
     padding: 8px 16px;
     font-size: 14px;
     font-weight: 600;
-    border: 1px solid green;
+    border: 1px solid var(--green);
     border-radius: 999px;
   }
 `;

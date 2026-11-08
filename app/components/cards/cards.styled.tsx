@@ -18,7 +18,7 @@ export const Heading = styled.h3`
 
   em {
     font-style: normal;
-    color: green;
+    color: var(--green);
   }
 
   @media (max-width: 640px) {

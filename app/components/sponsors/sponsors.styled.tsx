@@ -64,7 +64,7 @@ export const Item = styled.li`
 
     &:hover {
         opacity: 1;
-        border-color: green;
+        border-color: var(--green);
     }
 
     img {

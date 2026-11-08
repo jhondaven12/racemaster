@@ -8,8 +8,8 @@ export const navigation = [
     href: "/#trails",
   },
   {
-    label: "Gallery",
-    href: "/gallery",
+    label: "Results",
+    href: "/results",
   },
   {
     label: "Rules",

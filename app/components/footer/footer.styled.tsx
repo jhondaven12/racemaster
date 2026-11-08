@@ -5,6 +5,9 @@ export const Footer = styled.footer`
   color: white;
   padding: 40px 20px;
   text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 `;
 
 export const FooterBody = styled.section`
@@ -57,7 +60,7 @@ export const SponsorList = styled.ul`
 
 export const Sponsor = styled.li`
   padding: 10px 24px;
-  border: 1px solid green;
+  border: 1px solid var(--green);
   border-radius: 5px;
   font-size: 14px;
 `;

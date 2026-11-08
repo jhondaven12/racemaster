@@ -13,7 +13,7 @@ export const Button = styled.button<{ $visible: boolean }>`
     padding: 0;
     font-size: 30px;
     color: white;
-    background: green;
+    background: var(--green);
     border: none;
     border-radius: 50%;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);

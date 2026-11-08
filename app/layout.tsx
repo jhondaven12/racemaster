@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import StyledComponentsRegistry from "./registry";
+import Navigation from "./components/navigation/page";
+import Footer from "./components/footer/page";
+import ScrollToTop from "./components/scroll-to-top/page";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -11,7 +14,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en">
       <body>
+        <Navigation/>
         <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+        <Footer/>
+        <ScrollToTop/>
       </body>
     </html>
   );

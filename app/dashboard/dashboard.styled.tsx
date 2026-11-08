@@ -73,7 +73,7 @@ export const Eyebrow = styled.span`
   letter-spacing: 3px;
   text-transform: uppercase;
   background: rgba(0, 128, 0, 0.25);
-  border: 1px solid green;
+  border: 1px solid var(--green);
   border-radius: 999px;
 `;
 
@@ -112,7 +112,7 @@ export const Subtitle = styled.h4`
   letter-spacing: 6px;
   color: white;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: green;
+  -webkit-text-stroke-color: var(--green)green;
 `;
 
 export const Actions = styled.div`
@@ -130,8 +130,8 @@ export const Button = styled.a`
   font-weight: 700;
   color: white;
   text-decoration: none;
-  background-color: green;
-  border: 1px solid green;
+  background-color: var(--green);
+  border: 1px solid var(--green);
   border-radius: 999px;
   box-shadow: 0 8px 20px rgba(0, 128, 0, 0.35);
   cursor: pointer;
@@ -188,13 +188,13 @@ export const EyebrowSpan = styled.span`
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: green;
+  color: var(--green);
 
   &::before {
     content: "";
     width: 40px;
     height: 2px;
-    background: green;
+    background: var(--green);
   }
 `;
 
@@ -206,7 +206,7 @@ export const WelcomeTitle = styled.h2`
 
   em {
     font-style: normal;
-    color: green;
+    color: var(--green);
   }
 
   @media (max-width: 640px) {
@@ -237,7 +237,7 @@ export const Highlights = styled.ul`
     padding: 8px 16px;
     font-size: 14px;
     font-weight: 600;
-    border: 1px solid green;
+    border: 1px solid var(--green);
     border-radius: 999px;
   }
 `;

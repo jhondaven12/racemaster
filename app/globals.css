@@ -3,6 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --green: green;
 }
 
 /* @theme inline {
@@ -74,6 +75,7 @@ h4{
 p{
   font-size: 14px;
 }
+
 html {
   scroll-behavior: smooth;
 }

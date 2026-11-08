@@ -1,4 +1,4 @@
-import * as Styled from "../../dashboard/footer.styled";
+import * as Styled from "./footer.styled";
 import { CiFacebook } from "react-icons/ci";
 import { SiGmail } from "react-icons/si";
 import { BsFillTelephoneFill } from "react-icons/bs";
