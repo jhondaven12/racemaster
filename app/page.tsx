@@ -6,7 +6,8 @@ import * as MainStyle from "./page.styled";
 
 export const metadata = createMetadata({
   title: "Ultra Trail",
-  description: "Learn more about your company",
+  description:
+    "Upcoming Ultra Trail events in Nueva Vizcaya: distances, elevation gain, dates and results.",
 });
 
 export default function Home() {

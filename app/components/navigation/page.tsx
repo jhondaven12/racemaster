@@ -1,11 +1,13 @@
 "use client"
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import { navigation } from "@/config/navigation";
 import * as Styled from "./navigation.styled";
 
 
 export default function Navigation() {
     const [isScrolled, setIsScrolled] = useState(false);
+    const isDark = usePathname().startsWith("/results");
 
     useEffect(() => {
         const handleScroll = () => {
@@ -20,10 +22,11 @@ export default function Navigation() {
     }, []);
 
     return (
-        <Styled.Nav $isScrolled={isScrolled}>
+        <Styled.Nav $isScrolled={isScrolled} $dark={isDark}>
             <Styled.Logo
                 href="/"
                 $isScrolled={isScrolled}
+                $dark={isDark}
             >
                 Logo
             </Styled.Logo>
@@ -34,6 +37,7 @@ export default function Navigation() {
                         <Styled.StyledLink
                             href={nav.href}
                             $isScrolled={isScrolled}
+                            $dark={isDark}
                             onClick={(e) => {
                                 const hash = nav.href.split("#")[1];
                                 if (!hash || window.location.pathname !== "/") return;

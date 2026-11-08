@@ -1,12 +1,12 @@
 import Link from "next/link";
 import styled from "styled-components";
 
-export const Nav = styled.nav<{ $isScrolled: boolean }>`
+export const Nav = styled.nav<{ $isScrolled: boolean; $dark?: boolean }>`
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: ${({ $isScrolled }) =>
-    $isScrolled ? "white" : "transparent"};
+  background-color: ${({ $isScrolled, $dark }) =>
+    $dark ? "#0b0b0b" : $isScrolled ? "white" : "transparent"};
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,8 +23,12 @@ export const Navlists = styled.ul`
   gap: 30px;
 `;
 
-export const StyledLink = styled(Link)<{ $isScrolled: boolean }>`
-  color: ${({ $isScrolled }) => ($isScrolled ? "#1d1c1c" : " white")};
+export const StyledLink = styled(Link)<{
+  $isScrolled: boolean;
+  $dark?: boolean;
+}>`
+  color: ${({ $isScrolled, $dark }) =>
+    $dark ? "white" : $isScrolled ? "#1d1c1c" : "white"};
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 1.5px;
