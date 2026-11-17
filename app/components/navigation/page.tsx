@@ -7,7 +7,8 @@ import * as Styled from "./navigation.styled";
 
 export default function Navigation() {
     const [isScrolled, setIsScrolled] = useState(false);
-    const isDark = usePathname().startsWith("/results");
+    const pathname = usePathname();
+    const isDark = ["/results", "/register"].some((p) => pathname.startsWith(p));
 
     useEffect(() => {
         const handleScroll = () => {

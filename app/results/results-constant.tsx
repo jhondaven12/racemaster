@@ -41,18 +41,4 @@ export const racesResults = [
     elevationGain: "640 m",
     date: "2027-10-18",
   },
-  // {
-  //   id: 4,
-  //   eventName: "SIERRA MADRE TRAIL FESTIVAL 2026",
-  //   trailsName: "Mount Daraitan",
-  //   location: "Tanay, Rizal",
-  //   races: "6",
-  //   finishers: "520",
-  //   dnf: "31",
-  //   bco: "10",
-  //   trailDistance: "15.0 km",
-  //   distance: "15.0 km",
-  //   elevationGain: "950 m",
-  //   date: "2027-11-22",
-  // },
 ];

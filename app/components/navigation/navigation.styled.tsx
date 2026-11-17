@@ -11,7 +11,7 @@ export const Nav = styled.nav<{ $isScrolled: boolean; $dark?: boolean }>`
   justify-content: space-between;
   align-items: center;
   padding: 0px 9%;
-  z-index: 1;
+  z-index: 1000;
 `;
 
 export const Navlists = styled.ul`

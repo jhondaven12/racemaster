@@ -10,20 +10,23 @@ import {
 import { FaMountainSun } from "react-icons/fa6";
 import { format } from "date-fns";
 import Countdown from "./countdown";
+import { useRouter } from "next/navigation";
 
 export default function TrailCards() {
+  const router = useRouter();
   return (
     <Styled.Wrapper id="trails">
-      <Styled.Heading>
-        Upcoming <em>Events</em>
-      </Styled.Heading>
+      <Styled.Heading>Upcoming Events</Styled.Heading>
       <Styled.Description>
         Check the distance, elevation gain and date of each trail, then pick the
         one that fits your pace.
       </Styled.Description>
       <Styled.CardContainer>
         {trails.slice(0, 4).map((item, index) => (
-          <Styled.CardContent key={item.id}>
+          <Styled.CardContent
+            key={item.id}
+            onClick={() => router.push(`/register/${item.id}`)}
+          >
             <Styled.ImageWrapper>
               <Image
                 src="/images/hikingImage.png"
